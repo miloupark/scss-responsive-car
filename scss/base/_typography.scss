@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap") layer(CDNFont);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap") layer(CDNFont);
+
+@layer Typography {
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-size: 1rem;
+    font-family: "Plus Jakarta Sans", "Noto Sans KR", sans-serif;
+  }
+}

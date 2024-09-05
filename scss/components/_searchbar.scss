@@ -1,0 +1,20 @@
+@use "../abstracts/" as *;
+
+@layer Component.Searchbar {
+  .search-bar {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    width: rem(492);
+    border-radius: rem(70);
+    border: 1px solid $border01;
+    padding: rem(10) rem(20);
+    gap: rem(20);
+    .input-type01 {
+      border: none;
+      outline: none;
+      &::placeholder {
+        @include text($gray59, rem(14), 500, rem(21), rem(-0.28));
+      }
+    }
+  }
+}

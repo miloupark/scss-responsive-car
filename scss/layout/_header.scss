@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+
+@layer Layout.Header {
+  .header {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    width: rem(1440);
+    align-items: center;
+    padding: rem(40) rem(32) rem(40) rem(60);
+    gap: rem(128);
+    .logo {
+      @include text($primary, rem(32), 700, 150%, rem(-1));
+      display: inline-block;
+      width: rem(148);
+      height: rem(44);
+    }
+  }
+}

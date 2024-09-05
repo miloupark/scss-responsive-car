@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+.footer {
+  padding: rem(80) rem(60);
+  .logo {
+    @include text($primary, rem(32), 700, 150%, rem(-0.96));
+    display: inline-block;
+    width: rem(148);
+    height: rem(44);
+  }
+  p {
+    max-width: rem(292);
+    @include text($text01, rem(16), 500, 150%, rem(-0.32));
+  }
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    @include text($text02, rem(20), 500, 150%, rem(-0.4));
+    > a {
+      @include text($text01, rem(16), 500, 150%, rem(-0.32));
+    }
+  }
+}

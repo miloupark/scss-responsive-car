@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+@layer Components.Nav {
+  .nav-ico {
+    display: flex;
+    gap: rem(20);
+    .header & {
+      justify-content: flex-end;
+    }
+  }
+}
